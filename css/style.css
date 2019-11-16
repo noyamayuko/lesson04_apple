@@ -1,19 +1,192 @@
 @charset "UTF-8";
 
-/* .section-wrap{
-    background-color: black;
-} */
+*,*::before, *::after{
+    box-sizing: border-box;
+}
 
+body{
+    color: #ffffff;
+    font-family: "SF Display";
+    line-height: 1.1;
+}
+
+/*  .section-wrap
+----------------------------------------- */
+.section-wrap{
+    background-color: #111111;
+    padding: 24px;
+}
+
+/*  .hero-area
+----------------------------------------- */
 .hero-area{
-    width: 1092px;
-    height: 673px;
+    display: flex;
     background-color: #000000;
+    height: 673px;
+    margin-bottom: 24px;
 }
-
 .hero-l{
-
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-r{
+    width: 50%;
+    display: flex;
+    /* 子要素を右側に配置する */
+    justify-content: flex-end;
 }
 
-.hero-r{
-    
+/*  .sales
+----------------------------------------- */
+.sales{
+    text-align: center;
+}
+.sales h1{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+.sales h3{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 27px;
+}
+.sales p{
+    font-family: "SF Text";
+    font-size: 13px;
+    margin-bottom: 22px;
+}
+.sales button{
+    width: 51px;
+    height: 29px;
+    background-color: #2997ff;
+    margin-bottom: 13px;
+    border: none;
+    border-radius: 51px;
+    color: #ffffff;
+}
+.sales ul{
+    display: flex;
+    justify-content: space-between;
+    width: 197px;
+    margin: 0 auto;
+}
+.sales li{
+    font-family: "SF Text";
+    font-size: 13px;
+    color: #2997ff;
+}
+
+/*  .main01-area
+----------------------------------------- */
+.main01-area{
+    height: 533px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+    background: url(../img/main01.png) 
+    no-repeat center center;
+    background-size: cover;
+}
+.main01-area h2{
+    font-size: 58px;
+}
+
+/*  .main02-area
+----------------------------------------- */
+.main02-area{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.main02-area div{
+    width: 48.722%;
+    height: 534px;
+    margin-bottom: 24px;
+}
+.main02-area div:nth-of-type(1){
+    background: url(../img/main02.png) 
+    no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.main02-area div:nth-of-type(1) h4{
+    font-size: 31px;
+    position: absolute;
+    top: 367px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.main02-area div:nth-of-type(2){
+    background: url(../img/main03.png) 
+    no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.main02-area div:nth-of-type(2) h4{
+    font-size: 31px;
+    position: absolute;
+    top: 318px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.main02-area div:nth-of-type(3){
+    background: url(../img/main04.png) 
+    no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.main02-area div:nth-of-type(3) h4{
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    top: 186px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.main02-area div:nth-of-type(4){
+    background: url(../img/main05.png) 
+    no-repeat center center;
+    background-size: cover;
+}
+.main02-area div:nth-of-type(5){
+    background: url(../img/main06.png) 
+    no-repeat center center;
+    background-size: cover;
+}
+.main02-area div:nth-of-type(6){
+    background: url(../img/main07.png) 
+    no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.main02-area div:nth-of-type(6) h4{
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    top: 39px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.main02-area div:nth-of-type(6) h5{
+    font-size: 32px;
+    position: absolute;
+    top: 97px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+/*  .main03-area
+----------------------------------------- */
+.main03-area{
+    background-color: #000000;
+    padding: 70px 0 76px;
 }
